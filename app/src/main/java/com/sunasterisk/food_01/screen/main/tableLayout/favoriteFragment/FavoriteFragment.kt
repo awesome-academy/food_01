@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import com.sunasterisk.food_01.R
 
 class FavoriteFragment : Fragment() {
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
