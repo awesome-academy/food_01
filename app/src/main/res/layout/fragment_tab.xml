@@ -32,7 +32,7 @@
             app:tabGravity="fill"
             app:tabIconTint="@color/color_selector"
             app:tabMode="fixed"
-            app:tabTextAppearance="@style/tab_layout_font"
+            app:tabTextAppearance="@style/tabLayoutFont"
             app:tabTextColor="@color/color_selector" />
     </com.google.android.material.appbar.AppBarLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

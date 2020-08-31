@@ -5,7 +5,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="tab_layout_font" parent="@android:style/TextAppearance.Widget.TabWidget">
+    <style name="tabLayoutFont"
+        parent="@android:style/TextAppearance.Widget.TabWidget">
         <item name="android:fontFamily">@font/chewy</item>
         <item name="android:textSize">20sp</item>
     </style>
@@ -13,5 +14,16 @@
     <style name="PaddingTopLeft10">
         <item name="android:paddingLeft">10dp</item>
         <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <style name="tabLayoutToolbarStyle"
+        parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/chewy</item>
+        <item name="android:textSize">@dimen/sp_35</item>
+    </style>
+
+    <style name="fontName" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/chewy</item>
+        <item name="android:textSize">@dimen/sp_25</item>
     </style>
 </resources>
