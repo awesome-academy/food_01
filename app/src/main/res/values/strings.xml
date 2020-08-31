@@ -4,4 +4,7 @@
     <string name="favorite">Favorite</string>
     <string name="search">Search</string>
     <string name="detail">Detail</string>
+    <string name="masterChef">Master Chef</string>
+    <string name="todayRecipe">Today\'s Recipe</string>
+    <string name="recipe">Recipes</string>
 </resources>
