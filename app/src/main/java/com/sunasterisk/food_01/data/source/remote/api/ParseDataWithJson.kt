@@ -1,5 +1,6 @@
 package com.sunasterisk.food_01.data.source.remote.api
 
+import com.sunasterisk.food_01.data.model.RecipeEntry
 import org.json.JSONException
 import org.json.JSONObject
 import java.io.BufferedReader
@@ -52,7 +53,7 @@ class ParseDataWithJson {
         try {
             jsonObject?.let {
                 when (keyEntity) {
-                    // TODO: job need execute later
+                    RecipeEntry.RECIPE -> PasreJson().recipeParseJson(jsonObject)
                     else -> null
                 }
             }
