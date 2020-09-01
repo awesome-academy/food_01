@@ -23,7 +23,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/searchFoodRecycler"
-        style="@style/PaddingTopLeft10"
+        style="@style/PaddingTopLeftRight10"
         android:layout_width="@dimen/dp_380"
         android:layout_height="match_parent"
         android:background="@drawable/bg_fragment"

@@ -11,9 +11,10 @@
         <item name="android:textSize">20sp</item>
     </style>
 
-    <style name="PaddingTopLeft10">
+    <style name="PaddingTopLeftRight10">
         <item name="android:paddingLeft">10dp</item>
         <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">@dimen/dp_10</item>
     </style>
 
     <style name="tabLayoutToolbarStyle"
