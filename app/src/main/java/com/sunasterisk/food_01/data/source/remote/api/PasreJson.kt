@@ -1,5 +1,7 @@
 package com.sunasterisk.food_01.data.source.remote.api
 
+import com.sunasterisk.food_01.data.model.Category
+import com.sunasterisk.food_01.data.model.CategoryEntry
 import com.sunasterisk.food_01.data.model.Recipe
 import com.sunasterisk.food_01.data.model.RecipeEntry
 import org.json.JSONObject
@@ -36,4 +38,11 @@ class PasreJson {
             measure10 = jsonObject.getString(RecipeEntry.MEASURE10)
         )
     }
+
+    fun categoryParseJson(jsonObject: JSONObject) =
+        Category(
+        name = jsonObject.getString(CategoryEntry.NAME),
+        image = jsonObject.getString(CategoryEntry.IMAGE),
+        description = jsonObject.getString(CategoryEntry.DECRIPTION)
+    )
 }
