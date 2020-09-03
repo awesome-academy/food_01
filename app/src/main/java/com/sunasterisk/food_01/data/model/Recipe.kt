@@ -6,6 +6,7 @@ data class Recipe(
     val category: String = "",
     val area: String = "",
     val instructions: String = "",
+    val tag: String = "",
     val urlImage: String = "",
     val urlVideo: String = "",
     val ingre1: String = "",
@@ -31,12 +32,14 @@ data class Recipe(
 )
 
 object RecipeEntry {
+    const val OBJECT = "meals"
     const val RECIPE = "results"
     const val ID_RECIPE = "idMeal"
     const val NAME = "strMeal"
     const val CATEGORY = "strCategory"
     const val AREA = "strArea"
     const val INSTRUCTIONS = "strInstructions"
+    const val TAG = "strTags"
     const val URL_IMAGE = "strMealThumb"
     const val URL_VIDEO = "strYoutube"
     const val INGRE1 = "strIngredient1"

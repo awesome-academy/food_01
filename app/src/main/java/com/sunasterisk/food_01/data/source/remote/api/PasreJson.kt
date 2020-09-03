@@ -14,6 +14,7 @@ class PasreJson {
             category = jsonObject.getString(RecipeEntry.CATEGORY),
             area = jsonObject.getString(RecipeEntry.AREA),
             instructions = jsonObject.getString(RecipeEntry.INSTRUCTIONS),
+            tag = jsonObject.getString(RecipeEntry.TAG),
             urlImage = jsonObject.getString(RecipeEntry.URL_IMAGE),
             urlVideo = jsonObject.getString(RecipeEntry.URL_VIDEO),
             ingre1 = jsonObject.getString(RecipeEntry.INGRE1),

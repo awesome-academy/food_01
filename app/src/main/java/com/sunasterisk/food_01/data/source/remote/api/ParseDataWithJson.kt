@@ -55,6 +55,7 @@ class ParseDataWithJson {
                 when (keyEntity) {
                     RecipeEntry.RECIPE -> PasreJson().recipeParseJson(jsonObject)
                     CategoryEntry.OBJECT -> PasreJson().categoryParseJson(jsonObject)
+                    RecipeEntry.OBJECT -> PasreJson().recipeParseJson(jsonObject)
                     else -> null
                 }
             }
