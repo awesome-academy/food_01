@@ -15,9 +15,10 @@ import com.sunasterisk.food_01.data.source.remote.dowload_image.DownloadImage
 import com.sunasterisk.food_01.data.source.repository.CategoryRepository
 import com.sunasterisk.food_01.data.source.repository.RecipeRandomRepository
 import com.sunasterisk.food_01.screen.home.layout_adapter.CategoryAdapter
+import com.sunasterisk.food_01.utils.OnItemRecyclerViewClickListenner
 import kotlinx.android.synthetic.main.fragment_home.*
 
-class HomeFragment : Fragment(), HomeContract.View {
+class HomeFragment : Fragment(), HomeContract.View, OnItemRecyclerViewClickListenner<Category> {
     private val categoryAdapter by lazy { CategoryAdapter() }
     private val listRecipe = mutableListOf<Recipe>()
 
@@ -73,6 +74,11 @@ class HomeFragment : Fragment(), HomeContract.View {
     private fun initView() {
         recyclerCategories.setHasFixedSize(true)
         recyclerCategories.adapter = categoryAdapter
+        categoryAdapter.registerItemRecyclerViewClickListener(this)
+    }
+
+    override fun onItemClickListener(item: Category?) {
+        Toast.makeText(this.context, item?.name, Toast.LENGTH_SHORT).show()
     }
 
     companion object {
