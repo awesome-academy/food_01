@@ -1,5 +1,6 @@
 package com.sunasterisk.food_01.data.source.remote
 
+import android.util.Log
 import com.sunasterisk.food_01.data.model.Recipe
 import com.sunasterisk.food_01.data.model.RecipeEntry
 import com.sunasterisk.food_01.data.source.data_source.RecipeDataSource
@@ -12,7 +13,7 @@ class RecipeRemoteDataSource : RecipeDataSource.Remote{
     }
 
     override fun getRecipeByName(strFood: String?, listener: OnFetchDataJsonListener<MutableList<Recipe>>) {
-        GetJsonFromUrl(listener, RecipeEntry.RECIPE).execute(BaseUrl.baseUrlRecipesByName(strFood))
+        GetJsonFromUrl(listener, RecipeEntry.OBJECT).execute(BaseUrl.baseUrlRecipesByName(strFood))
     }
 
     companion object{

@@ -10,7 +10,7 @@ class RecipeRepository(private val remote: RecipeDataSource.Remote) {
         val INSTANCE = RecipeRepository(remote = RecipeRemoteDataSource.instance)
     }
 
-    fun getRecipeByName(
+    fun getRecipesByName(
         strFood: String?,
         listener: OnFetchDataJsonListener<MutableList<Recipe>>
     ) {

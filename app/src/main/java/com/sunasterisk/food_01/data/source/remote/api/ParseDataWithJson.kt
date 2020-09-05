@@ -1,5 +1,6 @@
 package com.sunasterisk.food_01.data.source.remote.api
 
+
 import com.sunasterisk.food_01.data.model.CategoryEntry
 import com.sunasterisk.food_01.data.model.RecipeEntry
 import org.json.JSONException
@@ -8,6 +9,7 @@ import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.net.HttpURLConnection
 import java.net.URL
+import kotlin.jvm.Throws
 
 class ParseDataWithJson {
 
@@ -53,9 +55,8 @@ class ParseDataWithJson {
         return try {
             jsonObject?.let {
                 when (keyEntity) {
-                    RecipeEntry.RECIPE -> PasreJson().recipeParseJson(jsonObject)
-                    CategoryEntry.OBJECT -> PasreJson().categoryParseJson(jsonObject)
-                    RecipeEntry.OBJECT -> PasreJson().recipeParseJson(jsonObject)
+                    CategoryEntry.OBJECT -> PasreJson().categoryParseJson(it)
+                    RecipeEntry.OBJECT -> PasreJson().recipeParseJson(it)
                     else -> null
                 }
             }

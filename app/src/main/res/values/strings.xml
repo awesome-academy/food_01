@@ -7,4 +7,5 @@
     <string name="masterChef">Master Chef</string>
     <string name="todayRecipe">Today\'s Recipe</string>
     <string name="recipe">Recipes</string>
+    <string name="tags">Tags:</string>
 </resources>

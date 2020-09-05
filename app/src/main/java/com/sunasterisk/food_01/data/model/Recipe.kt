@@ -8,6 +8,7 @@ data class Recipe(
     val instructions: String = "",
     val tag: String = "",
     val urlImage: String = "",
+    val tags: String = "",
     val urlVideo: String = "",
     val ingre1: String = "",
     val ingre2: String = "",
@@ -33,7 +34,6 @@ data class Recipe(
 
 object RecipeEntry {
     const val OBJECT = "meals"
-    const val RECIPE = "results"
     const val ID_RECIPE = "idMeal"
     const val NAME = "strMeal"
     const val CATEGORY = "strCategory"
@@ -41,6 +41,7 @@ object RecipeEntry {
     const val INSTRUCTIONS = "strInstructions"
     const val TAG = "strTags"
     const val URL_IMAGE = "strMealThumb"
+    const val TAGS = "strTags"
     const val URL_VIDEO = "strYoutube"
     const val INGRE1 = "strIngredient1"
     const val INGRE2 = "strIngredient2"
